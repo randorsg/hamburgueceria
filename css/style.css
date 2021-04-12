@@ -1,0 +1,154 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+
+/* 
+font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif;
+*/
+
+html {
+    /* para general scroll animado de puntos de ancla se aplica esta regla */
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* defino la variable que se van a repetir en mi codigo */
+    --color-principal: #fa573a;
+    --color-secundario: #21242e;
+    --fuente-principal: 'Monserrat', sans-serif;
+    --fuente-secundaria: 'handlee', cursive;
+    --fontsize: 1em;
+    --anchomaximo: 68.750em;
+    --margingrid: 1em;
+    --padding: 0.625em;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    font-size: var(--fontsize);
+}
+
+.container {
+    max-width: var(--anchomaximo);
+    margin: 0 auto;
+}
+
+
+/* inicio header */
+
+header .nav-top {
+    background-color: var(--color-secundario);
+    padding: calc(var(--padding) *2) 0px;
+}
+
+header .nav-top .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .nav-top a {
+    color: var(--color-principal);
+    text-decoration: none;
+}
+
+header .nav-top a span {
+    display: none;
+}
+
+header .nav-top a i {
+    font-size: 150%;
+}
+
+header nav {
+    padding: calc(var(--padding) * 2);
+}
+
+header nav .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header nav .logo img {
+    max-width: 6.250em;
+}
+
+header nav .hamburguesa {
+    cursor: pointer;
+    /* hace que funcione como un enlace y sale la mano de enlace */
+}
+
+header nav .hamburguesa div {
+    border-top: 2px solid #aaa;
+    margin-bottom: var(--padding);
+    width: 1.875em;
+}
+
+header nav ul {
+    width: 100%;
+}
+
+header nav .menu li a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    padding: calc(var(--padding)*2);
+    color: #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+header nav .menu li:last-child a {
+    border-bottom: 0;
+}
+
+header nav .menu li .activo,
+header nav .menu li a:hover {
+    color: var(--color-principal);
+}
+
+
+/* final header */
+
+
+/* mediaqueries */
+
+@media ( min-width:600px) {}
+
+@media (min-width: 768px) {
+    header .nav-top a span {
+        display: inline;
+        color: #ffff;
+        font-size: 120%;
+        margin-left: 5px;
+    }
+}
+
+@media (min-width: 1004px) {
+    header nav .hamburguesa {
+        display: none;
+    }
+    header nav ul {
+        width: auto;
+    }
+    header nav .menu li {
+        display: inline-block;
+    }
+    header nav .menu li a {
+        padding: 0.5em var(--padding);
+        border-bottom: none;
+    }
+    header {
+        box-shadow: 0px 1px 10px gray;
+    }
+}
