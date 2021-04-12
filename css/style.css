@@ -121,6 +121,40 @@ header nav .menu li a:hover {
 /* final header */
 
 
+/* Inicio footer */
+
+footer {
+    background-color: var(--color-secundario);
+    padding: calc(var(--padding) * 2) 0px;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--color-principal);
+}
+
+.flecha a {
+    display: block;
+    color: var(--color-principal);
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    font-size: 300%;
+}
+
+
+/* final footer */
+
+
 /* mediaqueries */
 
 @media ( min-width:600px) {}
@@ -150,5 +184,8 @@ header nav .menu li a:hover {
     }
     header {
         box-shadow: 0px 1px 10px gray;
+    }
+    footer {
+        text-align: left;
     }
 }
