@@ -98,6 +98,25 @@ header nav ul {
     width: 100%;
 }
 
+header nav .menu li a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    padding: calc(var(--padding)*2);
+    color: #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+header nav .menu li:last-child a {
+    border-bottom: 0;
+}
+
+header nav .menu li .activo,
+header nav .menu li a:hover {
+    color: var(--color-principal);
+}
+
 
 /* final header */
 
@@ -115,4 +134,21 @@ header nav ul {
     }
 }
 
-@media (min-width: 1004px) {}
+@media (min-width: 1004px) {
+    header nav .hamburguesa {
+        display: none;
+    }
+    header nav ul {
+        width: auto;
+    }
+    header nav .menu li {
+        display: inline-block;
+    }
+    header nav .menu li a {
+        padding: 0.5em var(--padding);
+        border-bottom: none;
+    }
+    header {
+        box-shadow: 0px 1px 10px gray;
+    }
+}
