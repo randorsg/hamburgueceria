@@ -1,0 +1,43 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+
+/* 
+font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif;
+*/
+
+html {
+    /* para general scroll animado de puntos de ancla se aplica esta regla */
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /* defino la variable que se van a repetir en mi codigo */
+    --color-principal: #fa573a;
+    --color-secundario: #21242e;
+    --fuente-principal: 'Monserrat', sans-serif;
+    --fuente-secundaria: 'handlee', cursive;
+    --fontsize: 1em;
+    --anchomaximo: 68.750em;
+    --margingrid: 1em;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    font-size: var(--fontsize);
+}
+
+.container {
+    max-width: var(--anchomaximo);
+    margin: 0 auto;
+}
