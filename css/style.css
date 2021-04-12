@@ -24,6 +24,7 @@ html {
     --fontsize: 1em;
     --anchomaximo: 68.750em;
     --margingrid: 1em;
+    --padding: 0.625em;
 }
 
 img {
@@ -41,3 +42,77 @@ body {
     max-width: var(--anchomaximo);
     margin: 0 auto;
 }
+
+
+/* inicio header */
+
+header .nav-top {
+    background-color: var(--color-secundario);
+    padding: calc(var(--padding) *2) 0px;
+}
+
+header .nav-top .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .nav-top a {
+    color: var(--color-principal);
+    text-decoration: none;
+}
+
+header .nav-top a span {
+    display: none;
+}
+
+header .nav-top a i {
+    font-size: 150%;
+}
+
+header nav {
+    padding: calc(var(--padding) * 2);
+}
+
+header nav .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header nav .logo img {
+    max-width: 6.250em;
+}
+
+header nav .hamburguesa {
+    cursor: pointer;
+    /* hace que funcione como un enlace y sale la mano de enlace */
+}
+
+header nav .hamburguesa div {
+    border-top: 2px solid #aaa;
+    margin-bottom: var(--padding);
+    width: 1.875em;
+}
+
+header nav ul {
+    width: 100%;
+}
+
+
+/* final header */
+
+
+/* mediaqueries */
+
+@media ( min-width:600px) {}
+
+@media (min-width: 768px) {
+    header .nav-top a span {
+        display: inline;
+        color: #ffff;
+        font-size: 120%;
+        margin-left: 5px;
+    }
+}
+
+@media (min-width: 1004px) {}
