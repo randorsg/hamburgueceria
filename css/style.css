@@ -72,7 +72,7 @@ font-family: 'Montserrat', sans-serif;
                 }
                 
                 header nav {
-                    padding: calc(var(--padding) * 2);
+                    padding: calc(var(--padding)*2);
                 }
                 
                 header nav .container {
@@ -232,6 +232,22 @@ font-family: 'Montserrat', sans-serif;
                     transform: rotateY(180deg);
                 }
                 /* final ourservice */
+                /* inicio aboutus */
+                
+                main section:last-child {
+                    padding-bottom: 90px;
+                }
+                
+                main section h4 {
+                    margin: var(--margingrid)0;
+                    color: var(--color-principal);
+                }
+                
+                main section .flex {
+                    display: flex;
+                    flex-direction: column;
+                }
+                /* final aboutus */
                 /* inicio hero */
                 
                 .hero {
@@ -307,10 +323,16 @@ font-family: 'Montserrat', sans-serif;
                     main #ourservices .grid article:last-child {
                         grid-column: 1/3;
                     }
-                    main#ourservices .grid article {
+                    main #ourservices .grid article {
                         border-bottom: 0px;
                         border-left: 1px solid #aaa;
                         padding: 1.5em;
+                    }
+                    main section .flex {
+                        flex-direction: row;
+                    }
+                    main section .flex .columna {
+                        margin: 0 var(--margingrid);
                     }
                 }
                 
